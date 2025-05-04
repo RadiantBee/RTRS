@@ -1,0 +1,332 @@
+\doxysection{UI Class Reference}
+\hypertarget{classUI}{}\label{classUI}\index{UI@{UI}}
+
+
+Handles the graphical user interface for the restaurant table management system.  
+
+
+
+
+{\ttfamily \#include $<$ui.\+h$>$}
+
+
+
+Collaboration diagram for UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classUI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUI_ac1c35b520aac8fd76269b7934006aad1}{UI}} (\mbox{\hyperlink{classTableHandler}{Table\+Handler}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9}{tables}})
+\begin{DoxyCompactList}\small\item\em Constructs the \doxylink{classUI}{UI} object with a reference to the \doxylink{classTableHandler}{Table\+Handler}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a6479d1a61963fa54d6ecc6aed43a4a0f}{load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Loads textures required for the \doxylink{classUI}{UI}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a07a0a8d918e36b70a09d362304872f3a}{unload\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Unloads \doxylink{classUI}{UI} textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a11a5b60d8f59c41b6d1acf9d153eaafa}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Renders the entire \doxylink{classUI}{UI} including background, table states, and input fields. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Texture \mbox{\hyperlink{classUI_adc693ebe648dd196ed1c63643f57b9b2}{bg}}
+\begin{DoxyCompactList}\small\item\em Background texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTableHandler}{Table\+Handler}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9}{tables}}
+\begin{DoxyCompactList}\small\item\em Pointer to the table handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a84a7b3715fa830ef5050bfba006a2dee}{table\+State}}
+\begin{DoxyCompactList}\small\item\em Current state of the selected table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a5b9ac0f1855c05168d69b108474d807b}{delta\+ID}}
+\begin{DoxyCompactList}\small\item\em Used for table selection changes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a8ad142cad34f9ecfdcf67bd3d9aa741b}{table\+Config\+Window\+Active}}
+\begin{DoxyCompactList}\small\item\em Indicates if the table configuration window is active. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a34be6469aa1a95a44d57fa1e73e3069c}{entry\+XActive}}
+\begin{DoxyCompactList}\small\item\em Is the X position input active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a4987375b9d5b75d8d71b06f5d018750e}{entry\+XValue}}
+\begin{DoxyCompactList}\small\item\em Value of the X position input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a54f672efb197dd6cd8dbe858bf2d0e72}{entry\+YActive}}
+\begin{DoxyCompactList}\small\item\em Is the Y position input active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_afc8e05eddd9ffac3bd0c71af6ae149dc}{entry\+YValue}}
+\begin{DoxyCompactList}\small\item\em Value of the Y position input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a77f6106d4917938667941db48bd928b4}{entry\+Size\+Active}}
+\begin{DoxyCompactList}\small\item\em Is the size input active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a531494b19ef74f2a300484b7c27c8eaa}{entry\+Size\+Value}}
+\begin{DoxyCompactList}\small\item\em Value of the size input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_aefbc7e45bf62b702ae270411918d9706}{entry\+Name\+Active}}
+\begin{DoxyCompactList}\small\item\em Is the name input active. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classUI_ae23e6560899655ea04626aac57b99f01}{entry\+Name\+Value}} \mbox{[}128\mbox{]} = "{}"{}
+\begin{DoxyCompactList}\small\item\em Value of the name input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_ab5dba848beca84e777b70b1eb3b529cc}{entry\+Phone\+Active}}
+\begin{DoxyCompactList}\small\item\em Is the phone input active. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classUI_a6914857d53f6e9ba89950b5f3ec41146}{entry\+Phone\+Value}} \mbox{[}128\mbox{]} = "{}"{}
+\begin{DoxyCompactList}\small\item\em Value of the phone number input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a95a6ccf6ecc51eb3d3eb4ad5f0e25ea8}{entry\+Hour\+Active}}
+\begin{DoxyCompactList}\small\item\em Is the hour input active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_ae2c86c01bc04468e06872d2f28a48d18}{entry\+Hour\+Value}}
+\begin{DoxyCompactList}\small\item\em Value of the hour input. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_afcee656896b2be7de914013a1c4749cc}{entry\+Minute\+Active}}
+\begin{DoxyCompactList}\small\item\em Is the minute input active. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a090655d6135121eb29cb08a17c3d1b83}{entry\+Minute\+Value}}
+\begin{DoxyCompactList}\small\item\em Value of the minute input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the graphical user interface for the restaurant table management system. 
+
+The \doxylink{classUI}{UI} class is responsible for rendering the background, interacting with the user, and providing input fields for configuring table data and reservations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUI_ac1c35b520aac8fd76269b7934006aad1}\label{classUI_ac1c35b520aac8fd76269b7934006aad1} 
+\index{UI@{UI}!UI@{UI}}
+\index{UI@{UI}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{UI()}{UI()}}
+{\footnotesize\ttfamily UI\+::\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTableHandler}{Table\+Handler}} \texorpdfstring{$\ast$}{*}}]{tables }\end{DoxyParamCaption})}
+
+
+
+Constructs the \doxylink{classUI}{UI} object with a reference to the \doxylink{classTableHandler}{Table\+Handler}. 
+
+Constructs the \doxylink{classUI}{UI} and initializes default values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tables} & Pointer to the \doxylink{classTableHandler}{Table\+Handler} managing all tables. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUI_a11a5b60d8f59c41b6d1acf9d153eaafa}\label{classUI_a11a5b60d8f59c41b6d1acf9d153eaafa} 
+\index{UI@{UI}!draw@{draw}}
+\index{draw@{draw}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void UI\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the entire \doxylink{classUI}{UI} including background, table states, and input fields. 
+
+Renders the entire \doxylink{classUI}{UI} frame, including buttons and table configuration window.
+
+Displays the background, handles GUI input, and allows table creation, modification, deletion, and reservation. \Hypertarget{classUI_a6479d1a61963fa54d6ecc6aed43a4a0f}\label{classUI_a6479d1a61963fa54d6ecc6aed43a4a0f} 
+\index{UI@{UI}!loadTextures@{loadTextures}}
+\index{loadTextures@{loadTextures}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{loadTextures()}{loadTextures()}}
+{\footnotesize\ttfamily void UI\+::load\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads textures required for the \doxylink{classUI}{UI}. 
+
+Loads background texture and table textures. \Hypertarget{classUI_a07a0a8d918e36b70a09d362304872f3a}\label{classUI_a07a0a8d918e36b70a09d362304872f3a} 
+\index{UI@{UI}!unloadTextures@{unloadTextures}}
+\index{unloadTextures@{unloadTextures}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{unloadTextures()}{unloadTextures()}}
+{\footnotesize\ttfamily void UI\+::unload\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unloads \doxylink{classUI}{UI} textures. 
+
+Unloads background and table textures to free memory. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUI_adc693ebe648dd196ed1c63643f57b9b2}\label{classUI_adc693ebe648dd196ed1c63643f57b9b2} 
+\index{UI@{UI}!bg@{bg}}
+\index{bg@{bg}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{bg}{bg}}
+{\footnotesize\ttfamily Texture UI\+::bg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Background texture. 
+
+\Hypertarget{classUI_a5b9ac0f1855c05168d69b108474d807b}\label{classUI_a5b9ac0f1855c05168d69b108474d807b} 
+\index{UI@{UI}!deltaID@{deltaID}}
+\index{deltaID@{deltaID}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{deltaID}{deltaID}}
+{\footnotesize\ttfamily int UI\+::delta\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Used for table selection changes. 
+
+\Hypertarget{classUI_a95a6ccf6ecc51eb3d3eb4ad5f0e25ea8}\label{classUI_a95a6ccf6ecc51eb3d3eb4ad5f0e25ea8} 
+\index{UI@{UI}!entryHourActive@{entryHourActive}}
+\index{entryHourActive@{entryHourActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryHourActive}{entryHourActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+Hour\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the hour input active. 
+
+\Hypertarget{classUI_ae2c86c01bc04468e06872d2f28a48d18}\label{classUI_ae2c86c01bc04468e06872d2f28a48d18} 
+\index{UI@{UI}!entryHourValue@{entryHourValue}}
+\index{entryHourValue@{entryHourValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryHourValue}{entryHourValue}}
+{\footnotesize\ttfamily int UI\+::entry\+Hour\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the hour input. 
+
+\Hypertarget{classUI_afcee656896b2be7de914013a1c4749cc}\label{classUI_afcee656896b2be7de914013a1c4749cc} 
+\index{UI@{UI}!entryMinuteActive@{entryMinuteActive}}
+\index{entryMinuteActive@{entryMinuteActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryMinuteActive}{entryMinuteActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+Minute\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the minute input active. 
+
+\Hypertarget{classUI_a090655d6135121eb29cb08a17c3d1b83}\label{classUI_a090655d6135121eb29cb08a17c3d1b83} 
+\index{UI@{UI}!entryMinuteValue@{entryMinuteValue}}
+\index{entryMinuteValue@{entryMinuteValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryMinuteValue}{entryMinuteValue}}
+{\footnotesize\ttfamily int UI\+::entry\+Minute\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the minute input. 
+
+\Hypertarget{classUI_aefbc7e45bf62b702ae270411918d9706}\label{classUI_aefbc7e45bf62b702ae270411918d9706} 
+\index{UI@{UI}!entryNameActive@{entryNameActive}}
+\index{entryNameActive@{entryNameActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryNameActive}{entryNameActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+Name\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the name input active. 
+
+\Hypertarget{classUI_ae23e6560899655ea04626aac57b99f01}\label{classUI_ae23e6560899655ea04626aac57b99f01} 
+\index{UI@{UI}!entryNameValue@{entryNameValue}}
+\index{entryNameValue@{entryNameValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryNameValue}{entryNameValue}}
+{\footnotesize\ttfamily char UI\+::entry\+Name\+Value\mbox{[}128\mbox{]} = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the name input. 
+
+\Hypertarget{classUI_ab5dba848beca84e777b70b1eb3b529cc}\label{classUI_ab5dba848beca84e777b70b1eb3b529cc} 
+\index{UI@{UI}!entryPhoneActive@{entryPhoneActive}}
+\index{entryPhoneActive@{entryPhoneActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryPhoneActive}{entryPhoneActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+Phone\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the phone input active. 
+
+\Hypertarget{classUI_a6914857d53f6e9ba89950b5f3ec41146}\label{classUI_a6914857d53f6e9ba89950b5f3ec41146} 
+\index{UI@{UI}!entryPhoneValue@{entryPhoneValue}}
+\index{entryPhoneValue@{entryPhoneValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryPhoneValue}{entryPhoneValue}}
+{\footnotesize\ttfamily char UI\+::entry\+Phone\+Value\mbox{[}128\mbox{]} = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the phone number input. 
+
+\Hypertarget{classUI_a77f6106d4917938667941db48bd928b4}\label{classUI_a77f6106d4917938667941db48bd928b4} 
+\index{UI@{UI}!entrySizeActive@{entrySizeActive}}
+\index{entrySizeActive@{entrySizeActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entrySizeActive}{entrySizeActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+Size\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the size input active. 
+
+\Hypertarget{classUI_a531494b19ef74f2a300484b7c27c8eaa}\label{classUI_a531494b19ef74f2a300484b7c27c8eaa} 
+\index{UI@{UI}!entrySizeValue@{entrySizeValue}}
+\index{entrySizeValue@{entrySizeValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entrySizeValue}{entrySizeValue}}
+{\footnotesize\ttfamily int UI\+::entry\+Size\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the size input. 
+
+\Hypertarget{classUI_a34be6469aa1a95a44d57fa1e73e3069c}\label{classUI_a34be6469aa1a95a44d57fa1e73e3069c} 
+\index{UI@{UI}!entryXActive@{entryXActive}}
+\index{entryXActive@{entryXActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryXActive}{entryXActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+XActive\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the X position input active. 
+
+\Hypertarget{classUI_a4987375b9d5b75d8d71b06f5d018750e}\label{classUI_a4987375b9d5b75d8d71b06f5d018750e} 
+\index{UI@{UI}!entryXValue@{entryXValue}}
+\index{entryXValue@{entryXValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryXValue}{entryXValue}}
+{\footnotesize\ttfamily int UI\+::entry\+XValue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the X position input. 
+
+\Hypertarget{classUI_a54f672efb197dd6cd8dbe858bf2d0e72}\label{classUI_a54f672efb197dd6cd8dbe858bf2d0e72} 
+\index{UI@{UI}!entryYActive@{entryYActive}}
+\index{entryYActive@{entryYActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryYActive}{entryYActive}}
+{\footnotesize\ttfamily bool UI\+::entry\+YActive\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is the Y position input active. 
+
+\Hypertarget{classUI_afc8e05eddd9ffac3bd0c71af6ae149dc}\label{classUI_afc8e05eddd9ffac3bd0c71af6ae149dc} 
+\index{UI@{UI}!entryYValue@{entryYValue}}
+\index{entryYValue@{entryYValue}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{entryYValue}{entryYValue}}
+{\footnotesize\ttfamily int UI\+::entry\+YValue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value of the Y position input. 
+
+\Hypertarget{classUI_a8ad142cad34f9ecfdcf67bd3d9aa741b}\label{classUI_a8ad142cad34f9ecfdcf67bd3d9aa741b} 
+\index{UI@{UI}!tableConfigWindowActive@{tableConfigWindowActive}}
+\index{tableConfigWindowActive@{tableConfigWindowActive}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{tableConfigWindowActive}{tableConfigWindowActive}}
+{\footnotesize\ttfamily bool UI\+::table\+Config\+Window\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates if the table configuration window is active. 
+
+\Hypertarget{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9}\label{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9} 
+\index{UI@{UI}!tables@{tables}}
+\index{tables@{tables}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTableHandler}{Table\+Handler}}\texorpdfstring{$\ast$}{*} UI\+::tables\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the table handler. 
+
+\Hypertarget{classUI_a84a7b3715fa830ef5050bfba006a2dee}\label{classUI_a84a7b3715fa830ef5050bfba006a2dee} 
+\index{UI@{UI}!tableState@{tableState}}
+\index{tableState@{tableState}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{tableState}{tableState}}
+{\footnotesize\ttfamily int UI\+::table\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current state of the selected table. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ui_8h}{ui.\+h}}\item 
+src/\mbox{\hyperlink{ui_8cpp}{ui.\+cpp}}\end{DoxyCompactItemize}

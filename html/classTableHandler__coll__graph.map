@@ -1,0 +1,5 @@
+<map id="TableHandler" name="TableHandler">
+<area shape="rect" id="Node000001" title="Manages a collection of restaurant tables and their interactions." alt="" coords="45,863,267,1401"/>
+<area shape="rect" id="Node000002" href="$classTable.html" title="Represents a table in a restaurant with reservation and state information." alt="" coords="5,5,307,800"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,800,159,846,153,846,153,800"/>
+</map>

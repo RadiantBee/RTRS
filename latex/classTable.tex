@@ -1,0 +1,408 @@
+\doxysection{Table Class Reference}
+\hypertarget{classTable}{}\label{classTable}\index{Table@{Table}}
+
+
+Represents a table in a restaurant with reservation and state information.  
+
+
+
+
+{\ttfamily \#include $<$tables.\+h$>$}
+
+
+
+Collaboration diagram for Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTable_a049f2e06391781ae255c6698869c4ad1}{Table}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTable_ab9ada28ae0ebbe3ec3c6065d20ba611b}{Table}} (int \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}}, int \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}}, short int \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}}, short int \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}}, const std\+::string \&\mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}}, const std\+::string \&\mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phone\+Number}}, short int \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}}, short int \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor to initialize a table with full data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTable}{Table}} \& \mbox{\hyperlink{classTable_a52a9aae86062533496b2cf7eb3422cfd}{operator=}} (\mbox{\hyperlink{classTable}{Table}} obj)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_ac453aa0d0c1f62e55dc4f42a0bee0d10}{set\+All}} (int \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}}, int \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}}, short int \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}}, short int \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}}, const std\+::string \&\mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}}, const std\+::string \&\mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phone\+Number}}, short int \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}}, short int \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}})
+\begin{DoxyCompactList}\small\item\em Set all table data at once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_a7f9419c36728d6bb6f1fc507b5c5e632}{change\+Main\+Data}} (int newX, int newY, short int new\+Size)
+\begin{DoxyCompactList}\small\item\em Change the table’s position and size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_afbada743fec91ec1292cd972818749f8}{reserve}} (const std\+::string \&client\+Name, const std\+::string \&client\+Phone\+Number, short int reservation\+Hour, short int reservation\+Minute)
+\begin{DoxyCompactList}\small\item\em Make a reservation for the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_ac81049d77cf8684dda09fa6e2f98b931}{occupy}} ()
+\begin{DoxyCompactList}\small\item\em Mark the table as occupied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_ac5512292b359c7d40b64fd28024fbb67}{free}} ()
+\begin{DoxyCompactList}\small\item\em Free the table, removing reservation and occupancy state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_a9d8d33e2966879b63a05fd22bbe4be1b}{time\+Check}} (short int current\+Hour, short int current\+Minute)
+\begin{DoxyCompactList}\small\item\em Check if a reservation is late based on the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_aa6281f9df693fb0a9935c6b124440201}{test}} ()
+\begin{DoxyCompactList}\small\item\em Test function (used for debug or placeholder). \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a445d62f23f4ab55757f4bd026e0da939}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Get the current state of the table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTable_a8ea0f08352b3d202235e3ddc932f88be}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Get the X-\/coordinate of the table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTable_a75fddc32f3424de6e2e7e7f2f4b18a67}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Get the Y-\/coordinate of the table. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a9a6a378042eb17b80b049cea92e44691}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum number of people allowed at the table. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTable_a3a6049ceab7c12f75252590c8a3521df}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the reservation holder. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTable_a0c736813b97a79d296b1a75a78abc1f0}{get\+Phone\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Get the phone number of the reservation holder. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a52f351d6813424bed465291a00bf1092}{get\+Hour}} ()
+\begin{DoxyCompactList}\small\item\em Get the hour of the reservation. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_ac6ffe4d3d9145993495bfe20bc8eed54}{get\+Minute}} ()
+\begin{DoxyCompactList}\small\item\em Get the minute of the reservation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}}
+\begin{DoxyCompactList}\small\item\em X-\/coordinate of the table on the layout. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}}
+\begin{DoxyCompactList}\small\item\em Y-\/coordinate of the table on the layout. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}}
+\begin{DoxyCompactList}\small\item\em Current state of the table\+: free, occupied, reserved, or late reservation. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}}
+\begin{DoxyCompactList}\small\item\em Maximum number of people the table can accommodate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the person who reserved the table. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phone\+Number}}
+\begin{DoxyCompactList}\small\item\em Phone number of the person who reserved the table. \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}}
+\begin{DoxyCompactList}\small\item\em Reservation hour (0–23) \end{DoxyCompactList}\item 
+short int \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}}
+\begin{DoxyCompactList}\small\item\em Reservation minute (0–59) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a table in a restaurant with reservation and state information. 
+
+The \doxylink{classTable}{Table} class encapsulates properties related to a restaurant table, including its position, state (e.\+g., free, reserved, occupied), and reservation details. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTable_a049f2e06391781ae255c6698869c4ad1}\label{classTable_a049f2e06391781ae255c6698869c4ad1} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Default constructor for a \doxylink{classTable}{Table}.
+
+Initializes the table with default values indicating it\textquotesingle{}s unused or unconfigured. \Hypertarget{classTable_ab9ada28ae0ebbe3ec3c6065d20ba611b}\label{classTable_ab9ada28ae0ebbe3ec3c6065d20ba611b} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{short int}]{state,  }\item[{short int}]{size,  }\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{phone\+Number,  }\item[{short int}]{hour,  }\item[{short int}]{minute }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor to initialize a table with full data. 
+
+Parameterized constructor for a \doxylink{classTable}{Table}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate. \\
+\hline
+{\em y} & Y-\/coordinate. \\
+\hline
+{\em state} & \doxylink{classTable}{Table} state. \\
+\hline
+{\em size} & Number of people the table supports. \\
+\hline
+{\em name} & Reservation name. \\
+\hline
+{\em phone\+Number} & Reservation phone number. \\
+\hline
+{\em hour} & Reservation hour. \\
+\hline
+{\em minute} & Reservation minute.\\
+\hline
+{\em x} & \doxylink{classTable}{Table}\textquotesingle{}s X position. \\
+\hline
+{\em y} & \doxylink{classTable}{Table}\textquotesingle{}s Y position. \\
+\hline
+{\em state} & Initial state (0\+: free, 1\+: reserved, etc.). \\
+\hline
+{\em size} & Number of people the table can seat. \\
+\hline
+{\em name} & Reservation holder\textquotesingle{}s name. \\
+\hline
+{\em phone\+Number} & Reservation holder\textquotesingle{}s phone number. \\
+\hline
+{\em hour} & Reservation hour. \\
+\hline
+{\em minute} & Reservation minute. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTable_a7f9419c36728d6bb6f1fc507b5c5e632}\label{classTable_a7f9419c36728d6bb6f1fc507b5c5e632} 
+\index{Table@{Table}!changeMainData@{changeMainData}}
+\index{changeMainData@{changeMainData}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{changeMainData()}{changeMainData()}}
+{\footnotesize\ttfamily void Table\+::change\+Main\+Data (\begin{DoxyParamCaption}\item[{int}]{newX,  }\item[{int}]{newY,  }\item[{short int}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Change the table’s position and size. 
+
+Changes only the main physical data of the table (position and size). \Hypertarget{classTable_ac5512292b359c7d40b64fd28024fbb67}\label{classTable_ac5512292b359c7d40b64fd28024fbb67} 
+\index{Table@{Table}!free@{free}}
+\index{free@{free}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void Table\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Free the table, removing reservation and occupancy state. 
+
+Frees the table and clears any reservation details. \Hypertarget{classTable_a52f351d6813424bed465291a00bf1092}\label{classTable_a52f351d6813424bed465291a00bf1092} 
+\index{Table@{Table}!getHour@{getHour}}
+\index{getHour@{getHour}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getHour()}{getHour()}}
+{\footnotesize\ttfamily short int Table\+::get\+Hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the hour of the reservation. 
+
+Returns the reservation hour. \Hypertarget{classTable_ac6ffe4d3d9145993495bfe20bc8eed54}\label{classTable_ac6ffe4d3d9145993495bfe20bc8eed54} 
+\index{Table@{Table}!getMinute@{getMinute}}
+\index{getMinute@{getMinute}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getMinute()}{getMinute()}}
+{\footnotesize\ttfamily short int Table\+::get\+Minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the minute of the reservation. 
+
+Returns the reservation minute. \Hypertarget{classTable_a3a6049ceab7c12f75252590c8a3521df}\label{classTable_a3a6049ceab7c12f75252590c8a3521df} 
+\index{Table@{Table}!getName@{getName}}
+\index{getName@{getName}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Table\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the reservation holder. 
+
+Returns the name on the reservation. \Hypertarget{classTable_a0c736813b97a79d296b1a75a78abc1f0}\label{classTable_a0c736813b97a79d296b1a75a78abc1f0} 
+\index{Table@{Table}!getPhoneNumber@{getPhoneNumber}}
+\index{getPhoneNumber@{getPhoneNumber}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getPhoneNumber()}{getPhoneNumber()}}
+{\footnotesize\ttfamily std\+::string Table\+::get\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the phone number of the reservation holder. 
+
+Returns the reservation phone number. \Hypertarget{classTable_a9a6a378042eb17b80b049cea92e44691}\label{classTable_a9a6a378042eb17b80b049cea92e44691} 
+\index{Table@{Table}!getSize@{getSize}}
+\index{getSize@{getSize}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily short int Table\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the maximum number of people allowed at the table. 
+
+Returns the size (seating capacity) of the table. \Hypertarget{classTable_a445d62f23f4ab55757f4bd026e0da939}\label{classTable_a445d62f23f4ab55757f4bd026e0da939} 
+\index{Table@{Table}!getState@{getState}}
+\index{getState@{getState}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily short int Table\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current state of the table. 
+
+Returns the current state of the table. \Hypertarget{classTable_a8ea0f08352b3d202235e3ddc932f88be}\label{classTable_a8ea0f08352b3d202235e3ddc932f88be} 
+\index{Table@{Table}!getX@{getX}}
+\index{getX@{getX}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Table\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the X-\/coordinate of the table. 
+
+Returns the X position of the table. \Hypertarget{classTable_a75fddc32f3424de6e2e7e7f2f4b18a67}\label{classTable_a75fddc32f3424de6e2e7e7f2f4b18a67} 
+\index{Table@{Table}!getY@{getY}}
+\index{getY@{getY}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Table\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Y-\/coordinate of the table. 
+
+Returns the Y position of the table. \Hypertarget{classTable_ac81049d77cf8684dda09fa6e2f98b931}\label{classTable_ac81049d77cf8684dda09fa6e2f98b931} 
+\index{Table@{Table}!occupy@{occupy}}
+\index{occupy@{occupy}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{occupy()}{occupy()}}
+{\footnotesize\ttfamily void Table\+::occupy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mark the table as occupied. 
+
+Marks the table as currently occupied. \Hypertarget{classTable_a52a9aae86062533496b2cf7eb3422cfd}\label{classTable_a52a9aae86062533496b2cf7eb3422cfd} 
+\index{Table@{Table}!operator=@{operator=}}
+\index{operator=@{operator=}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTable}{Table}} \& Table\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+Copy assignment operator using copy-\/swap idiom.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \doxylink{classTable}{Table} to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this table. 
+\end{DoxyReturn}
+\Hypertarget{classTable_afbada743fec91ec1292cd972818749f8}\label{classTable_afbada743fec91ec1292cd972818749f8} 
+\index{Table@{Table}!reserve@{reserve}}
+\index{reserve@{reserve}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily void Table\+::reserve (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{client\+Name,  }\item[{const std\+::string \&}]{client\+Phone\+Number,  }\item[{short int}]{reservation\+Hour,  }\item[{short int}]{reservation\+Minute }\end{DoxyParamCaption})}
+
+
+
+Make a reservation for the table. 
+
+Marks the table as reserved and stores reservation details. \Hypertarget{classTable_ac453aa0d0c1f62e55dc4f42a0bee0d10}\label{classTable_ac453aa0d0c1f62e55dc4f42a0bee0d10} 
+\index{Table@{Table}!setAll@{setAll}}
+\index{setAll@{setAll}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setAll()}{setAll()}}
+{\footnotesize\ttfamily void Table\+::set\+All (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{short int}]{state,  }\item[{short int}]{size,  }\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{phone\+Number,  }\item[{short int}]{hour,  }\item[{short int}]{minute }\end{DoxyParamCaption})}
+
+
+
+Set all table data at once. 
+
+Sets all properties of the table at once. \Hypertarget{classTable_aa6281f9df693fb0a9935c6b124440201}\label{classTable_aa6281f9df693fb0a9935c6b124440201} 
+\index{Table@{Table}!test@{test}}
+\index{test@{test}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void Table\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test function (used for debug or placeholder). 
+
+Debug method to print test output. \Hypertarget{classTable_a9d8d33e2966879b63a05fd22bbe4be1b}\label{classTable_a9d8d33e2966879b63a05fd22bbe4be1b} 
+\index{Table@{Table}!timeCheck@{timeCheck}}
+\index{timeCheck@{timeCheck}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{timeCheck()}{timeCheck()}}
+{\footnotesize\ttfamily void Table\+::time\+Check (\begin{DoxyParamCaption}\item[{short int}]{current\+Hour,  }\item[{short int}]{current\+Minute }\end{DoxyParamCaption})}
+
+
+
+Check if a reservation is late based on the current time. 
+
+Checks if a reserved table is late compared to the current time. Changes state to 2 if late. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTable_ab4141020f9627e0344d90d616d9e5ecc}\label{classTable_ab4141020f9627e0344d90d616d9e5ecc} 
+\index{Table@{Table}!hour@{hour}}
+\index{hour@{hour}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily short int Table\+::hour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reservation hour (0–23) 
+
+\Hypertarget{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}\label{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95} 
+\index{Table@{Table}!minute@{minute}}
+\index{minute@{minute}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily short int Table\+::minute\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reservation minute (0–59) 
+
+\Hypertarget{classTable_a776e2cab59507b3b59d475a964e347b8}\label{classTable_a776e2cab59507b3b59d475a964e347b8} 
+\index{Table@{Table}!name@{name}}
+\index{name@{name}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Table\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name of the person who reserved the table. 
+
+\Hypertarget{classTable_a76b17858b6026e16ed287f65d855730f}\label{classTable_a76b17858b6026e16ed287f65d855730f} 
+\index{Table@{Table}!phoneNumber@{phoneNumber}}
+\index{phoneNumber@{phoneNumber}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{phoneNumber}{phoneNumber}}
+{\footnotesize\ttfamily std\+::string Table\+::phone\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Phone number of the person who reserved the table. 
+
+\Hypertarget{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}\label{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535} 
+\index{Table@{Table}!size@{size}}
+\index{size@{size}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily short int Table\+::size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maximum number of people the table can accommodate. 
+
+\Hypertarget{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}\label{classTable_a3bdebaa3dca8355eb8792b1507b61d4f} 
+\index{Table@{Table}!state@{state}}
+\index{state@{state}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily short int Table\+::state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current state of the table\+: free, occupied, reserved, or late reservation. 
+
+\Hypertarget{classTable_a5b2744ce82423d392244afa5d79b055c}\label{classTable_a5b2744ce82423d392244afa5d79b055c} 
+\index{Table@{Table}!x@{x}}
+\index{x@{x}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Table\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+X-\/coordinate of the table on the layout. 
+
+\Hypertarget{classTable_ac9c38c35b088bea08f5e023ce974d5a1}\label{classTable_ac9c38c35b088bea08f5e023ce974d5a1} 
+\index{Table@{Table}!y@{y}}
+\index{y@{y}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Table\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Y-\/coordinate of the table on the layout. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{tables_8h}{tables.\+h}}\item 
+src/\mbox{\hyperlink{tables_8cpp}{tables.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Table Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{8}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Table()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{8}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Table()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{8}{subsubsection.3.1.2.2}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{9}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}changeMainData()}{9}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}free()}{9}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}getHour()}{9}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}getMinute()}{9}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}getName()}{9}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}getPhoneNumber()}{10}{subsubsection.3.1.3.6}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}getSize()}{10}{subsubsection.3.1.3.7}%
+\contentsline {subsubsection}{\numberline {3.1.3.8}getState()}{10}{subsubsection.3.1.3.8}%
+\contentsline {subsubsection}{\numberline {3.1.3.9}getX()}{10}{subsubsection.3.1.3.9}%
+\contentsline {subsubsection}{\numberline {3.1.3.10}getY()}{10}{subsubsection.3.1.3.10}%
+\contentsline {subsubsection}{\numberline {3.1.3.11}occupy()}{10}{subsubsection.3.1.3.11}%
+\contentsline {subsubsection}{\numberline {3.1.3.12}operator=()}{10}{subsubsection.3.1.3.12}%
+\contentsline {subsubsection}{\numberline {3.1.3.13}reserve()}{11}{subsubsection.3.1.3.13}%
+\contentsline {subsubsection}{\numberline {3.1.3.14}setAll()}{11}{subsubsection.3.1.3.14}%
+\contentsline {subsubsection}{\numberline {3.1.3.15}test()}{11}{subsubsection.3.1.3.15}%
+\contentsline {subsubsection}{\numberline {3.1.3.16}timeCheck()}{11}{subsubsection.3.1.3.16}%
+\contentsline {subsection}{\numberline {3.1.4}Member Data Documentation}{12}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}hour}{12}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}minute}{12}{subsubsection.3.1.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}name}{12}{subsubsection.3.1.4.3}%
+\contentsline {subsubsection}{\numberline {3.1.4.4}phoneNumber}{12}{subsubsection.3.1.4.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.5}size}{12}{subsubsection.3.1.4.5}%
+\contentsline {subsubsection}{\numberline {3.1.4.6}state}{12}{subsubsection.3.1.4.6}%
+\contentsline {subsubsection}{\numberline {3.1.4.7}x}{12}{subsubsection.3.1.4.7}%
+\contentsline {subsubsection}{\numberline {3.1.4.8}y}{13}{subsubsection.3.1.4.8}%
+\contentsline {section}{\numberline {3.2}Table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{16}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}TableHandler()}{16}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}$\sim $TableHandler()}{16}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{16}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}createNewTable()}{16}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}deleteTable()}{16}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}draw()}{17}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}getActiveID()}{17}{subsubsection.3.2.3.4}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}getActiveIndexRef()}{17}{subsubsection.3.2.3.5}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}loadData()}{17}{subsubsection.3.2.3.6}%
+\contentsline {subsubsection}{\numberline {3.2.3.7}loadTextures()}{17}{subsubsection.3.2.3.7}%
+\contentsline {subsubsection}{\numberline {3.2.3.8}onClick()}{17}{subsubsection.3.2.3.8}%
+\contentsline {subsubsection}{\numberline {3.2.3.9}saveData()}{18}{subsubsection.3.2.3.9}%
+\contentsline {subsubsection}{\numberline {3.2.3.10}setActiveID()}{18}{subsubsection.3.2.3.10}%
+\contentsline {subsubsection}{\numberline {3.2.3.11}test()}{18}{subsubsection.3.2.3.11}%
+\contentsline {subsubsection}{\numberline {3.2.3.12}unloadTextures()}{18}{subsubsection.3.2.3.12}%
+\contentsline {subsubsection}{\numberline {3.2.3.13}update()}{18}{subsubsection.3.2.3.13}%
+\contentsline {subsection}{\numberline {3.2.4}Member Data Documentation}{19}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}activeID}{19}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}amount}{19}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}saveFileName}{19}{subsubsection.3.2.4.3}%
+\contentsline {subsubsection}{\numberline {3.2.4.4}tableFreeTexture}{19}{subsubsection.3.2.4.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.5}tableOccupiedTexture}{19}{subsubsection.3.2.4.5}%
+\contentsline {subsubsection}{\numberline {3.2.4.6}tableReservedLateTexture}{19}{subsubsection.3.2.4.6}%
+\contentsline {subsubsection}{\numberline {3.2.4.7}tableReservedTexture}{20}{subsubsection.3.2.4.7}%
+\contentsline {subsubsection}{\numberline {3.2.4.8}tables}{20}{subsubsection.3.2.4.8}%
+\contentsline {section}{\numberline {3.3}UI Class Reference}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{23}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}UI()}{23}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{23}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}draw()}{23}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}loadTextures()}{23}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}unloadTextures()}{23}{subsubsection.3.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Member Data Documentation}{23}{subsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.1}bg}{23}{subsubsection.3.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.3.4.2}deltaID}{24}{subsubsection.3.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.3.4.3}entryHourActive}{24}{subsubsection.3.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.3.4.4}entryHourValue}{24}{subsubsection.3.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.5}entryMinuteActive}{24}{subsubsection.3.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.3.4.6}entryMinuteValue}{24}{subsubsection.3.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.3.4.7}entryNameActive}{24}{subsubsection.3.3.4.7}%
+\contentsline {subsubsection}{\numberline {3.3.4.8}entryNameValue}{24}{subsubsection.3.3.4.8}%
+\contentsline {subsubsection}{\numberline {3.3.4.9}entryPhoneActive}{24}{subsubsection.3.3.4.9}%
+\contentsline {subsubsection}{\numberline {3.3.4.10}entryPhoneValue}{25}{subsubsection.3.3.4.10}%
+\contentsline {subsubsection}{\numberline {3.3.4.11}entrySizeActive}{25}{subsubsection.3.3.4.11}%
+\contentsline {subsubsection}{\numberline {3.3.4.12}entrySizeValue}{25}{subsubsection.3.3.4.12}%
+\contentsline {subsubsection}{\numberline {3.3.4.13}entryXActive}{25}{subsubsection.3.3.4.13}%
+\contentsline {subsubsection}{\numberline {3.3.4.14}entryXValue}{25}{subsubsection.3.3.4.14}%
+\contentsline {subsubsection}{\numberline {3.3.4.15}entryYActive}{25}{subsubsection.3.3.4.15}%
+\contentsline {subsubsection}{\numberline {3.3.4.16}entryYValue}{25}{subsubsection.3.3.4.16}%
+\contentsline {subsubsection}{\numberline {3.3.4.17}tableConfigWindowActive}{25}{subsubsection.3.3.4.17}%
+\contentsline {subsubsection}{\numberline {3.3.4.18}tables}{26}{subsubsection.3.3.4.18}%
+\contentsline {subsubsection}{\numberline {3.3.4.19}tableState}{26}{subsubsection.3.3.4.19}%
+\contentsline {chapter}{\numberline {4}File Documentation}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}include/table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.h File Reference}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}include/tables.h File Reference}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}tables.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}include/ui.h File Reference}{31}{section.4.5}%
+\contentsline {section}{\numberline {4.6}ui.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.4.6}%
+\contentsline {section}{\numberline {4.7}src/main.cpp File Reference}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{33}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Macro Definition Documentation}{33}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}RAYGUI\_STATIC}{33}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Function Documentation}{34}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}main()}{34}{subsubsection.4.7.3.1}%
+\contentsline {section}{\numberline {4.8}src/table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.cpp File Reference}{34}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{34}{subsection.4.8.1}%
+\contentsline {section}{\numberline {4.9}src/tables.cpp File Reference}{35}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{35}{subsection.4.9.1}%
+\contentsline {section}{\numberline {4.10}src/ui.cpp File Reference}{35}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Macro Definition Documentation}{36}{subsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.1}RAYGUI\_IMPLEMENTATION}{36}{subsubsection.4.10.1.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.2}RAYGUI\_NO\_RICONS}{36}{subsubsection.4.10.1.2}%
+\contentsline {chapter}{Index}{37}{section*.26}%

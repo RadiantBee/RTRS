@@ -1,0 +1,380 @@
+\doxysection{Table\+Handler Class Reference}
+\hypertarget{classTableHandler}{}\label{classTableHandler}\index{TableHandler@{TableHandler}}
+
+
+Manages a collection of restaurant tables and their interactions.  
+
+
+
+
+{\ttfamily \#include $<$table\+Handler.\+h$>$}
+
+
+
+Collaboration diagram for Table\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTableHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTableHandler_ab4e6310035b4eb0b62885e7ca9804986}{Table\+Handler}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the handler with a file name for data persistence. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTableHandler_af9fedd38ed9ff9d9dbe89fc896ea7cbe}{\texorpdfstring{$\sim$}{\string~}\+Table\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to clean up resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_aa558a0d1e85a4ebe3f923456d0041281}{load\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Loads table data from the save file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_ac8c58a632a36904e8a1c7080dae3ac82}{load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Loads textures required for table visualization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a5b32307c505f8b71b3804374375c7a66}{unload\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Unloads previously loaded textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_ad676c617c3376a0bda7f5ca5e0fc0948}{save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Saves current table data to the save file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a0633c19e40392cf0ce5085afcb86eeee}{create\+New\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Adds a new table to the collection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a255a2c7df7ff81fd5ef726f90749ae7d}{delete\+Table}} (int id)
+\begin{DoxyCompactList}\small\item\em Deletes a table by its ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_abae9bbc05ce71bb8f4ef83e1ad0ece28}{update}} (short int hour, short int minute)
+\begin{DoxyCompactList}\small\item\em Updates the state of all tables based on the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a750b9a5c84be0cc56e9eaa304a98aaac}{on\+Click}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Handles mouse click interactions on the table layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a8cebabca44151ce66145f3ca5f1d8e1e}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Renders all tables and their states. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTableHandler_a0d712de9192b235f1eb6d3938b566241}{get\+Active\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ID of the currently active table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_ad8511d0fc0e79ef83cfdfd0c22769aba}{set\+Active\+ID}} (int new\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the currently active table ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTable}{Table}} \& \mbox{\hyperlink{classTableHandler_a6b641c8d859638c768ee1ac726b78022}{get\+Active\+Index\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Gets a reference to the currently active table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableHandler_a59963fae02444a1d370e9296c083991a}{test}} ()
+\begin{DoxyCompactList}\small\item\em Test function (for debug or development use). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTable}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTableHandler_af09185196492d788eedff84de8285ad1}{tables}}
+\begin{DoxyCompactList}\small\item\em Dynamic array of tables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTableHandler_a4c5a8f4b23c20913c74476995abb6eef}{amount}}
+\begin{DoxyCompactList}\small\item\em Number of tables currently managed. \end{DoxyCompactList}\item 
+Texture \mbox{\hyperlink{classTableHandler_ae275288af100be5245fcfc2e2567d6ba}{table\+Free\+Texture}}
+\begin{DoxyCompactList}\small\item\em Texture used to represent a free table. \end{DoxyCompactList}\item 
+Texture \mbox{\hyperlink{classTableHandler_a4fa0a2dc5a218c9075c6a695762907e2}{table\+Occupied\+Texture}}
+\begin{DoxyCompactList}\small\item\em Texture used to represent an occupied table. \end{DoxyCompactList}\item 
+Texture \mbox{\hyperlink{classTableHandler_a1998b8c7b852639be2c09dc7011f8bdc}{table\+Reserved\+Texture}}
+\begin{DoxyCompactList}\small\item\em Texture used to represent a reserved table. \end{DoxyCompactList}\item 
+Texture \mbox{\hyperlink{classTableHandler_a6e5f12dc2cca554e1cd8724bf919edcc}{table\+Reserved\+Late\+Texture}}
+\begin{DoxyCompactList}\small\item\em Texture used to represent a reserved but late table. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTableHandler_afb84da391b6e0d7ba4f80db989ac4766}{save\+File\+Name}}
+\begin{DoxyCompactList}\small\item\em File path for saving/loading table data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTableHandler_a54343e90a2310ac3aaf1447282ee0010}{active\+ID}}
+\begin{DoxyCompactList}\small\item\em ID of the currently selected/active table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of restaurant tables and their interactions. 
+
+This class handles dynamic creation, deletion, updating, saving/loading, and rendering of table objects in a restaurant setting. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTableHandler_ab4e6310035b4eb0b62885e7ca9804986}\label{classTableHandler_ab4e6310035b4eb0b62885e7ca9804986} 
+\index{TableHandler@{TableHandler}!TableHandler@{TableHandler}}
+\index{TableHandler@{TableHandler}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{TableHandler()}{TableHandler()}}
+{\footnotesize\ttfamily Table\+Handler\+::\+Table\+Handler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the handler with a file name for data persistence. 
+
+Constructs a \doxylink{classTableHandler}{Table\+Handler} with a specified filename for saving/loading.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file name used for loading and saving table data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTableHandler_af9fedd38ed9ff9d9dbe89fc896ea7cbe}\label{classTableHandler_af9fedd38ed9ff9d9dbe89fc896ea7cbe} 
+\index{TableHandler@{TableHandler}!````~TableHandler@{\texorpdfstring{$\sim$}{\string~}TableHandler}}
+\index{````~TableHandler@{\texorpdfstring{$\sim$}{\string~}TableHandler}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TableHandler()}{\string~TableHandler()}}
+{\footnotesize\ttfamily Table\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+Table\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor to clean up resources. 
+
+Destructor that deallocates the table array if it\textquotesingle{}s been initialized. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTableHandler_a0633c19e40392cf0ce5085afcb86eeee}\label{classTableHandler_a0633c19e40392cf0ce5085afcb86eeee} 
+\index{TableHandler@{TableHandler}!createNewTable@{createNewTable}}
+\index{createNewTable@{createNewTable}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{createNewTable()}{createNewTable()}}
+{\footnotesize\ttfamily void Table\+Handler\+::create\+New\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds a new table to the collection. 
+
+Adds a new \doxylink{classTable}{Table} to the dynamic table array. \Hypertarget{classTableHandler_a255a2c7df7ff81fd5ef726f90749ae7d}\label{classTableHandler_a255a2c7df7ff81fd5ef726f90749ae7d} 
+\index{TableHandler@{TableHandler}!deleteTable@{deleteTable}}
+\index{deleteTable@{deleteTable}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{deleteTable()}{deleteTable()}}
+{\footnotesize\ttfamily void Table\+Handler\+::delete\+Table (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes a table by its ID. 
+
+Deletes a table by index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID/index of the table to delete.\\
+\hline
+{\em id} & Index of the table to delete. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTableHandler_a8cebabca44151ce66145f3ca5f1d8e1e}\label{classTableHandler_a8cebabca44151ce66145f3ca5f1d8e1e} 
+\index{TableHandler@{TableHandler}!draw@{draw}}
+\index{draw@{draw}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Table\+Handler\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders all tables and their states. 
+
+Draws all tables using appropriate textures based on their state. \Hypertarget{classTableHandler_a0d712de9192b235f1eb6d3938b566241}\label{classTableHandler_a0d712de9192b235f1eb6d3938b566241} 
+\index{TableHandler@{TableHandler}!getActiveID@{getActiveID}}
+\index{getActiveID@{getActiveID}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{getActiveID()}{getActiveID()}}
+{\footnotesize\ttfamily int Table\+Handler\+::get\+Active\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ID of the currently active table. 
+
+Gets the index of the currently active table.
+
+\begin{DoxyReturn}{Returns}
+The active table\textquotesingle{}s ID. 
+\end{DoxyReturn}
+\Hypertarget{classTableHandler_a6b641c8d859638c768ee1ac726b78022}\label{classTableHandler_a6b641c8d859638c768ee1ac726b78022} 
+\index{TableHandler@{TableHandler}!getActiveIndexRef@{getActiveIndexRef}}
+\index{getActiveIndexRef@{getActiveIndexRef}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{getActiveIndexRef()}{getActiveIndexRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTable}{Table}} \& Table\+Handler\+::get\+Active\+Index\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a reference to the currently active table. 
+
+Returns a reference to the currently active \doxylink{classTable}{Table}. Returns the first table if no active ID is set.
+
+\begin{DoxyReturn}{Returns}
+Reference to the active table. 
+\end{DoxyReturn}
+\Hypertarget{classTableHandler_aa558a0d1e85a4ebe3f923456d0041281}\label{classTableHandler_aa558a0d1e85a4ebe3f923456d0041281} 
+\index{TableHandler@{TableHandler}!loadData@{loadData}}
+\index{loadData@{loadData}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{loadData()}{loadData()}}
+{\footnotesize\ttfamily void Table\+Handler\+::load\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads table data from the save file. 
+
+\Hypertarget{classTableHandler_ac8c58a632a36904e8a1c7080dae3ac82}\label{classTableHandler_ac8c58a632a36904e8a1c7080dae3ac82} 
+\index{TableHandler@{TableHandler}!loadTextures@{loadTextures}}
+\index{loadTextures@{loadTextures}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{loadTextures()}{loadTextures()}}
+{\footnotesize\ttfamily void Table\+Handler\+::load\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads textures required for table visualization. 
+
+Loads table textures used for rendering. \Hypertarget{classTableHandler_a750b9a5c84be0cc56e9eaa304a98aaac}\label{classTableHandler_a750b9a5c84be0cc56e9eaa304a98aaac} 
+\index{TableHandler@{TableHandler}!onClick@{onClick}}
+\index{onClick@{onClick}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{onClick()}{onClick()}}
+{\footnotesize\ttfamily void Table\+Handler\+::on\+Click (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Handles mouse click interactions on the table layout. 
+
+Detects table selection based on mouse click coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate of the click. \\
+\hline
+{\em y} & The Y-\/coordinate of the click.\\
+\hline
+{\em x} & Mouse X coordinate. \\
+\hline
+{\em y} & Mouse Y coordinate. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTableHandler_ad676c617c3376a0bda7f5ca5e0fc0948}\label{classTableHandler_ad676c617c3376a0bda7f5ca5e0fc0948} 
+\index{TableHandler@{TableHandler}!saveData@{saveData}}
+\index{saveData@{saveData}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{saveData()}{saveData()}}
+{\footnotesize\ttfamily void Table\+Handler\+::save\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves current table data to the save file. 
+
+\Hypertarget{classTableHandler_ad8511d0fc0e79ef83cfdfd0c22769aba}\label{classTableHandler_ad8511d0fc0e79ef83cfdfd0c22769aba} 
+\index{TableHandler@{TableHandler}!setActiveID@{setActiveID}}
+\index{setActiveID@{setActiveID}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{setActiveID()}{setActiveID()}}
+{\footnotesize\ttfamily void Table\+Handler\+::set\+Active\+ID (\begin{DoxyParamCaption}\item[{int}]{new\+ID }\end{DoxyParamCaption})}
+
+
+
+Sets the currently active table ID. 
+
+Sets the currently active table index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+ID} & The new active table ID. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTableHandler_a59963fae02444a1d370e9296c083991a}\label{classTableHandler_a59963fae02444a1d370e9296c083991a} 
+\index{TableHandler@{TableHandler}!test@{test}}
+\index{test@{test}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void Table\+Handler\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test function (for debug or development use). 
+
+Prints all table data to standard output for debugging. \Hypertarget{classTableHandler_a5b32307c505f8b71b3804374375c7a66}\label{classTableHandler_a5b32307c505f8b71b3804374375c7a66} 
+\index{TableHandler@{TableHandler}!unloadTextures@{unloadTextures}}
+\index{unloadTextures@{unloadTextures}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{unloadTextures()}{unloadTextures()}}
+{\footnotesize\ttfamily void Table\+Handler\+::unload\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unloads previously loaded textures. 
+
+Unloads textures to free GPU memory. \Hypertarget{classTableHandler_abae9bbc05ce71bb8f4ef83e1ad0ece28}\label{classTableHandler_abae9bbc05ce71bb8f4ef83e1ad0ece28} 
+\index{TableHandler@{TableHandler}!update@{update}}
+\index{update@{update}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Table\+Handler\+::update (\begin{DoxyParamCaption}\item[{short int}]{hour,  }\item[{short int}]{minute }\end{DoxyParamCaption})}
+
+
+
+Updates the state of all tables based on the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hour} & The current hour. \\
+\hline
+{\em minute} & The current minute.\\
+\hline
+{\em hour} & Current hour. \\
+\hline
+{\em minute} & Current minute. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTableHandler_a54343e90a2310ac3aaf1447282ee0010}\label{classTableHandler_a54343e90a2310ac3aaf1447282ee0010} 
+\index{TableHandler@{TableHandler}!activeID@{activeID}}
+\index{activeID@{activeID}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{activeID}{activeID}}
+{\footnotesize\ttfamily int Table\+Handler\+::active\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ID of the currently selected/active table. 
+
+\Hypertarget{classTableHandler_a4c5a8f4b23c20913c74476995abb6eef}\label{classTableHandler_a4c5a8f4b23c20913c74476995abb6eef} 
+\index{TableHandler@{TableHandler}!amount@{amount}}
+\index{amount@{amount}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{amount}{amount}}
+{\footnotesize\ttfamily int Table\+Handler\+::amount\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of tables currently managed. 
+
+\Hypertarget{classTableHandler_afb84da391b6e0d7ba4f80db989ac4766}\label{classTableHandler_afb84da391b6e0d7ba4f80db989ac4766} 
+\index{TableHandler@{TableHandler}!saveFileName@{saveFileName}}
+\index{saveFileName@{saveFileName}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{saveFileName}{saveFileName}}
+{\footnotesize\ttfamily std\+::string Table\+Handler\+::save\+File\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+File path for saving/loading table data. 
+
+\Hypertarget{classTableHandler_ae275288af100be5245fcfc2e2567d6ba}\label{classTableHandler_ae275288af100be5245fcfc2e2567d6ba} 
+\index{TableHandler@{TableHandler}!tableFreeTexture@{tableFreeTexture}}
+\index{tableFreeTexture@{tableFreeTexture}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{tableFreeTexture}{tableFreeTexture}}
+{\footnotesize\ttfamily Texture Table\+Handler\+::table\+Free\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Texture used to represent a free table. 
+
+\Hypertarget{classTableHandler_a4fa0a2dc5a218c9075c6a695762907e2}\label{classTableHandler_a4fa0a2dc5a218c9075c6a695762907e2} 
+\index{TableHandler@{TableHandler}!tableOccupiedTexture@{tableOccupiedTexture}}
+\index{tableOccupiedTexture@{tableOccupiedTexture}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{tableOccupiedTexture}{tableOccupiedTexture}}
+{\footnotesize\ttfamily Texture Table\+Handler\+::table\+Occupied\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Texture used to represent an occupied table. 
+
+\Hypertarget{classTableHandler_a6e5f12dc2cca554e1cd8724bf919edcc}\label{classTableHandler_a6e5f12dc2cca554e1cd8724bf919edcc} 
+\index{TableHandler@{TableHandler}!tableReservedLateTexture@{tableReservedLateTexture}}
+\index{tableReservedLateTexture@{tableReservedLateTexture}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{tableReservedLateTexture}{tableReservedLateTexture}}
+{\footnotesize\ttfamily Texture Table\+Handler\+::table\+Reserved\+Late\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Texture used to represent a reserved but late table. 
+
+\Hypertarget{classTableHandler_a1998b8c7b852639be2c09dc7011f8bdc}\label{classTableHandler_a1998b8c7b852639be2c09dc7011f8bdc} 
+\index{TableHandler@{TableHandler}!tableReservedTexture@{tableReservedTexture}}
+\index{tableReservedTexture@{tableReservedTexture}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{tableReservedTexture}{tableReservedTexture}}
+{\footnotesize\ttfamily Texture Table\+Handler\+::table\+Reserved\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Texture used to represent a reserved table. 
+
+\Hypertarget{classTableHandler_af09185196492d788eedff84de8285ad1}\label{classTableHandler_af09185196492d788eedff84de8285ad1} 
+\index{TableHandler@{TableHandler}!tables@{tables}}
+\index{tables@{tables}!TableHandler@{TableHandler}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTable}{Table}}\texorpdfstring{$\ast$}{*} Table\+Handler\+::tables\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dynamic array of tables. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{tableHandler_8h}{table\+Handler.\+h}}\item 
+src/\mbox{\hyperlink{tableHandler_8cpp}{table\+Handler.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\doxysection{table\+Handler.\+h}
+\hypertarget{tableHandler_8h_source}{}\label{tableHandler_8h_source}\index{include/tableHandler.h@{include/tableHandler.h}}
+\mbox{\hyperlink{tableHandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tables_8h}{tables.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}resource\_dir.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTableHandler}{TableHandler}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classTable}{Table}}*\ \mbox{\hyperlink{classTableHandler_af09185196492d788eedff84de8285ad1}{tables}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTableHandler_a4c5a8f4b23c20913c74476995abb6eef}{amount}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ Texture\ \mbox{\hyperlink{classTableHandler_ae275288af100be5245fcfc2e2567d6ba}{tableFreeTexture}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ Texture\ \mbox{\hyperlink{classTableHandler_a4fa0a2dc5a218c9075c6a695762907e2}{tableOccupiedTexture}};\ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ Texture\ \mbox{\hyperlink{classTableHandler_a1998b8c7b852639be2c09dc7011f8bdc}{tableReservedTexture}};\ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ Texture\ \mbox{\hyperlink{classTableHandler_a6e5f12dc2cca554e1cd8724bf919edcc}{tableReservedLateTexture}};}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{classTableHandler_afb84da391b6e0d7ba4f80db989ac4766}{saveFileName}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTableHandler_a54343e90a2310ac3aaf1447282ee0010}{activeID}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classTableHandler}{TableHandler}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classTableHandler_af9fedd38ed9ff9d9dbe89fc896ea7cbe}{\string~TableHandler}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_aa558a0d1e85a4ebe3f923456d0041281}{loadData}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_ac8c58a632a36904e8a1c7080dae3ac82}{loadTextures}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a5b32307c505f8b71b3804374375c7a66}{unloadTextures}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_ad676c617c3376a0bda7f5ca5e0fc0948}{saveData}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a0633c19e40392cf0ce5085afcb86eeee}{createNewTable}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a255a2c7df7ff81fd5ef726f90749ae7d}{deleteTable}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_abae9bbc05ce71bb8f4ef83e1ad0ece28}{update}}(\textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ hour,\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ minute);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a750b9a5c84be0cc56e9eaa304a98aaac}{onClick}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a8cebabca44151ce66145f3ca5f1d8e1e}{draw}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTableHandler_a0d712de9192b235f1eb6d3938b566241}{getActiveID}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_ad8511d0fc0e79ef83cfdfd0c22769aba}{setActiveID}}(\textcolor{keywordtype}{int}\ newID);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{classTable}{Table}}\&\ \mbox{\hyperlink{classTableHandler_a6b641c8d859638c768ee1ac726b78022}{getActiveIndexRef}}();}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableHandler_a59963fae02444a1d370e9296c083991a}{test}}();}
+\DoxyCodeLine{00110\ \};}
+\DoxyCodeLine{00111\ }
+
+\end{DoxyCode}

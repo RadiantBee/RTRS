@@ -1,0 +1,73 @@
+\doxysection{tables.\+h}
+\hypertarget{tables_8h_source}{}\label{tables_8h_source}\index{include/tables.h@{include/tables.h}}
+\mbox{\hyperlink{tables_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTable}{Table}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ GUI\ data}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}};\ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}};\ \ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Table\ properties}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}};\ \ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Reservation\ data}}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phoneNumber}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classTable_a049f2e06391781ae255c6698869c4ad1}{Table}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classTable_a049f2e06391781ae255c6698869c4ad1}{Table}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}},}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phoneNumber}},}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classTable}{Table}}\&\ \mbox{\hyperlink{classTable_a52a9aae86062533496b2cf7eb3422cfd}{operator=}}(\mbox{\hyperlink{classTable}{Table}}\ obj);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_ac453aa0d0c1f62e55dc4f42a0bee0d10}{setAll}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a5b2744ce82423d392244afa5d79b055c}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ac9c38c35b088bea08f5e023ce974d5a1}{y}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a3bdebaa3dca8355eb8792b1507b61d4f}{state}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a9485ea6c5342b670dc4b3e0cd8f5b535}{size}},}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classTable_a776e2cab59507b3b59d475a964e347b8}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classTable_a76b17858b6026e16ed287f65d855730f}{phoneNumber}},}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ab4141020f9627e0344d90d616d9e5ecc}{hour}},\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a336cd9fb03ff1e6a492fd8c512fa3b95}{minute}});}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_a7f9419c36728d6bb6f1fc507b5c5e632}{changeMainData}}(\textcolor{keywordtype}{int}\ newX,\ \textcolor{keywordtype}{int}\ newY,\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ newSize);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_afbada743fec91ec1292cd972818749f8}{reserve}}(\textcolor{keyword}{const}\ std::string\&\ clientName,\ \textcolor{keyword}{const}\ std::string\&\ clientPhoneNumber,}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ reservationHour,\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ reservationMinute);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_ac81049d77cf8684dda09fa6e2f98b931}{occupy}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_ac5512292b359c7d40b64fd28024fbb67}{free}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_a9d8d33e2966879b63a05fd22bbe4be1b}{timeCheck}}(\textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ currentHour,\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ currentMinute);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTable_aa6281f9df693fb0a9935c6b124440201}{test}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a445d62f23f4ab55757f4bd026e0da939}{getState}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a8ea0f08352b3d202235e3ddc932f88be}{getX}}();}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a75fddc32f3424de6e2e7e7f2f4b18a67}{getY}}();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a9a6a378042eb17b80b049cea92e44691}{getSize}}();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00121\ \ \ \ \ std::string\ \mbox{\hyperlink{classTable_a3a6049ceab7c12f75252590c8a3521df}{getName}}();}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00126\ \ \ \ \ std::string\ \mbox{\hyperlink{classTable_a0c736813b97a79d296b1a75a78abc1f0}{getPhoneNumber}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_a52f351d6813424bed465291a00bf1092}{getHour}}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTable_ac6ffe4d3d9145993495bfe20bc8eed54}{getMinute}}();}
+\DoxyCodeLine{00137\ \};}
+\DoxyCodeLine{00138\ }
+
+\end{DoxyCode}

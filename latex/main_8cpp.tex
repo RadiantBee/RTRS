@@ -1,0 +1,60 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Entry point for the Restaurant \doxylink{classTable}{Table} Reservation System (RTRS).  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}ui.\+h"{}}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a109c5c5c6fbc672cefff87a9b24754fe}{RAYGUI\+\_\+\+STATIC}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Application entry point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entry point for the Restaurant \doxylink{classTable}{Table} Reservation System (RTRS). 
+
+Initializes the window and core systems, loads data, and enters the main update/render loop. Delegates functionality to \doxylink{classTableHandler}{Table\+Handler} and \doxylink{classUI}{UI} classes. 
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8cpp_a109c5c5c6fbc672cefff87a9b24754fe}\label{main_8cpp_a109c5c5c6fbc672cefff87a9b24754fe} 
+\index{main.cpp@{main.cpp}!RAYGUI\_STATIC@{RAYGUI\_STATIC}}
+\index{RAYGUI\_STATIC@{RAYGUI\_STATIC}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{RAYGUI\_STATIC}{RAYGUI\_STATIC}}
+{\footnotesize\ttfamily \#define RAYGUI\+\_\+\+STATIC}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Application entry point. 
+
+Initializes the graphical window, loads saved table data, updates the table states over time, and handles rendering and input. Uses the \doxylink{classTableHandler}{Table\+Handler} and \doxylink{classUI}{UI} classes to manage state and draw the interface.
+
+\begin{DoxyReturn}{Returns}
+Exit code (0 if successful). 
+\end{DoxyReturn}

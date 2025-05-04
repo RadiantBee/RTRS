@@ -1,0 +1,51 @@
+\doxysection{ui.\+h}
+\hypertarget{ui_8h_source}{}\label{ui_8h_source}\index{include/ui.h@{include/ui.h}}
+\mbox{\hyperlink{ui_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tableHandler_8h}{tableHandler.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUI}{UI}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ Texture\ \mbox{\hyperlink{classUI_adc693ebe648dd196ed1c63643f57b9b2}{bg}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classTableHandler}{TableHandler}}*\ \mbox{\hyperlink{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9}{tables}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_a84a7b3715fa830ef5050bfba006a2dee}{tableState}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_a5b9ac0f1855c05168d69b108474d807b}{deltaID}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_a8ad142cad34f9ecfdcf67bd3d9aa741b}{tableConfigWindowActive}};\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Entry\ field\ state\ and\ values}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_a34be6469aa1a95a44d57fa1e73e3069c}{entryXActive}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_a4987375b9d5b75d8d71b06f5d018750e}{entryXValue}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_a54f672efb197dd6cd8dbe858bf2d0e72}{entryYActive}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_afc8e05eddd9ffac3bd0c71af6ae149dc}{entryYValue}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_a77f6106d4917938667941db48bd928b4}{entrySizeActive}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_a531494b19ef74f2a300484b7c27c8eaa}{entrySizeValue}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_aefbc7e45bf62b702ae270411918d9706}{entryNameActive}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classUI_ae23e6560899655ea04626aac57b99f01}{entryNameValue}}[128]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_ab5dba848beca84e777b70b1eb3b529cc}{entryPhoneActive}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classUI_a6914857d53f6e9ba89950b5f3ec41146}{entryPhoneValue}}[128]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_a95a6ccf6ecc51eb3d3eb4ad5f0e25ea8}{entryHourActive}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_ae2c86c01bc04468e06872d2f28a48d18}{entryHourValue}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUI_afcee656896b2be7de914013a1c4749cc}{entryMinuteActive}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classUI_a090655d6135121eb29cb08a17c3d1b83}{entryMinuteValue}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classUI}{UI}}(\mbox{\hyperlink{classTableHandler}{TableHandler}}*\ \mbox{\hyperlink{classUI_a38030c47acf8b12fbe2315c4aa6bf5d9}{tables}});}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUI_a6479d1a61963fa54d6ecc6aed43a4a0f}{loadTextures}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUI_a07a0a8d918e36b70a09d362304872f3a}{unloadTextures}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUI_a11a5b60d8f59c41b6d1acf9d153eaafa}{draw}}();}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+
+\end{DoxyCode}
